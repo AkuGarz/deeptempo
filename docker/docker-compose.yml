@@ -1,0 +1,28 @@
+# Quick GPU dev environment.
+# Requires nvidia-container-toolkit.
+#
+# Usage:
+#   docker compose -f docker/docker-compose.yml up
+
+version: "3.8"
+
+services:
+  deeptempo-dev:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: deeptempo:dev
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - ..:/workspace
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    stdin_open: true
+    tty: true
