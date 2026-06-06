@@ -4,7 +4,7 @@
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![tests](https://github.com/AkuGarz/deeptempo/actions/workflows/tests.yml/badge.svg)](https://github.com/AkuGarz/deeptempo/actions/workflows/tests.yml)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen)](https://github.com/AkuGarz/deeptempo/actions)
 
 **Status: early-stage, under active development. Not production-ready. Expect breaking changes.**
 
